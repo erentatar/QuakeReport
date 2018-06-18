@@ -26,6 +26,7 @@ public final class QueryUtils {
     }
 
     public static List<Earthquake> fetchEarthquakeData(String requestUrl) {
+        Log.i(LOG_TAG, "TEST: fetchEarthquakeData()");
         URL url = createUrl(requestUrl);
 
         String jsonResponse = null;
